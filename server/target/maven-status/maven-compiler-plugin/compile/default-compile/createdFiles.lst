@@ -1,0 +1,7 @@
+DTO/LiftRideDTO$LiftRideDTOBuilder.class
+servlets/Status.class
+DTO/NewLiftRideRequestDTO$NewLiftRideRequestDTOBuilder.class
+servlets/Status$StatusBuilder.class
+DTO/NewLiftRideRequestDTO.class
+servlets/SkiersServlet.class
+DTO/LiftRideDTO.class
