@@ -1,15 +1,5 @@
-package client1; /**
- * Copyright (C), 2015-2024, XXX有限公司
- * FileName: Rider
- * Author:   jiang
- * Date:     6/3/24 2:22 PM
- * Description:
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
+package client1;
 
-import io.swagger.client.ApiClient;
 import lombok.*;
 
 /**
@@ -33,6 +23,4 @@ public class SkierEvent {
     private int seasonID;
     private int dayID;
     private int time;
-
-    private ApiClient apiClient;
 }

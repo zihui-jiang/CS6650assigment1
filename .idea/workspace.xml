@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad1e0e21-dd84-4a85-a3e9-1b59afbd9a6c" name="Default Changelist" comment="" />
+    <list default="true" id="ad1e0e21-dd84-4a85-a3e9-1b59afbd9a6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/client2/Throughput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/PredictClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/PredictClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/SkierEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/SkierEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/SkierEventGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/SkierEventGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client2/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client2/Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/client2/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client2/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/PredictClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/PredictClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent$SkierEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent$SkierEventBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEventGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEventGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client2/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client2/Client2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/client2/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client2/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.csv" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +125,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.PredictClient" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
@@ -141,12 +159,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/client/src/main/java/client1/Main.java</url>
-          <line>22</line>
-          <properties class="client1.Main" method="main">
+          <url>file://$PROJECT_DIR$/client/src/main/java/client1/PredictClient.java</url>
+          <line>25</line>
+          <properties class="client1.PredictClient" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/client/src/main/java/client1/Main.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

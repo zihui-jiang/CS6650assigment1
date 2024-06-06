@@ -1,15 +1,7 @@
-package client1; /**
- * Copyright (C), 2015-2024, XXX有限公司
- * FileName: client1.Client
- * Author:   jiang
- * Date:     6/2/24 5:59 PM
- * Description: Build multithread clients
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
+package client1;
 
 import com.google.gson.Gson;
+import io.swagger.client.ApiClient;
 import io.swagger.client.ApiException;
 import io.swagger.client.ApiResponse;
 import io.swagger.client.api.SkiersApi;
@@ -45,24 +37,20 @@ public class Client implements Runnable {
 
     public static AtomicInteger fail = new AtomicInteger();
 
-    Client(BlockingQueue<SkierEvent> eventQueue,CountDownLatch latch, Integer numRequests) {
+    private ApiClient apiClient;
+
+    Client(BlockingQueue<SkierEvent> eventQueue,CountDownLatch latch, Integer numRequests, ApiClient apiClient) {
         this.eventQueue = eventQueue;
         this.latch = latch;
         this.numRequests = numRequests;
+        this.apiClient = apiClient;
     }
-
-
-    Client(BlockingQueue<SkierEvent> eventQueue,Integer numRequests) {
-        this.eventQueue = eventQueue;
-        this.numRequests = numRequests;
-    }
-
 
 
     private boolean sendPostToServer(SkierEvent event) {
         for (int i = 1; i <= retry; i++) {
             try {
-                skiersApi.setApiClient(event.getApiClient());
+                skiersApi.setApiClient(apiClient);
                 LiftRide liftRide = new LiftRide();
                 liftRide.setLiftID(event.getLiftID());
                 liftRide.setTime(event.getTime());
@@ -72,14 +60,12 @@ public class Client implements Runnable {
                 }
             } catch (ApiException e) {
                 System.out.println("send request failed for " + i + "time");
-//                e.printStackTrace();
             }
         }
         return false;
     }
 
     public void run() {
-        Gson gson = new Gson();
         try {
             for (int i = 0; i < numRequests; i++) {
                 SkierEvent event = eventQueue.take();
@@ -91,26 +77,24 @@ public class Client implements Runnable {
             }
         } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-        }  finally {
-            latch.countDown();
         }
-
+        latch.countDown();
     }
 
     private synchronized void incrementSuccess() {
-        success.getAndIncrement();
+        success.incrementAndGet();
     }
 
     private synchronized void incrementFail() {
-        fail.getAndIncrement();
+        fail.incrementAndGet();
     }
 
 
-    public static synchronized int getSuccessfulRequests() {
+    static  int getSuccessfulRequests() {
         return success.get();
     }
 
-    public static synchronized int getFailedRequests() {
+    static  int getFailedRequests() {
         return fail.get();
     }
 }

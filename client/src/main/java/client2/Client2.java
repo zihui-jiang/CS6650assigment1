@@ -1,16 +1,8 @@
-package client2; /**
- * Copyright (C), 2015-2024, XXX有限公司
- * FileName: client1.Client
- * Author:   jiang
- * Date:     6/2/24 5:59 PM
- * Description: Build multithread clients
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
+package client2;
 
 import client1.SkierEvent;
 import com.google.gson.Gson;
+import io.swagger.client.ApiClient;
 import io.swagger.client.ApiException;
 import io.swagger.client.ApiResponse;
 import io.swagger.client.api.SkiersApi;
@@ -50,11 +42,13 @@ public class Client2 implements Runnable {
 
     public static AtomicInteger fail = new AtomicInteger();
     public static final Queue<Metric> metrics = new ConcurrentLinkedQueue<>();
+    private ApiClient apiClient;
 
-    Client2(BlockingQueue<SkierEvent> eventQueue, CountDownLatch latch, Integer numRequests) {
+    Client2(BlockingQueue<SkierEvent> eventQueue, CountDownLatch latch, Integer numRequests, ApiClient apiClient) {
         this.eventQueue = eventQueue;
         this.latch = latch;
         this.numRequests = numRequests;
+        this.apiClient = apiClient;
     }
 
 
@@ -68,7 +62,7 @@ public class Client2 implements Runnable {
     private boolean sendPostToServer(SkierEvent event) {
         for (int i = 1; i <= retry; i++) {
             try {
-                skiersApi.setApiClient(event.getApiClient());
+                skiersApi.setApiClient(apiClient);
                 LiftRide liftRide = new LiftRide();
                 liftRide.setLiftID(event.getLiftID());
                 liftRide.setTime(event.getTime());

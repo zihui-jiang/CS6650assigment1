@@ -27,7 +27,6 @@ import java.util.concurrent.BlockingQueue;
 @NoArgsConstructor
 @Builder
 public class SkierEventGenerator implements Runnable {
-    static final private String PATH = "http://35.167.154.73:8080/server-1.0-SNAPSHOT";
     private BlockingQueue<SkierEvent> eventQueue;
     private int eventCount;
 
@@ -38,16 +37,13 @@ public class SkierEventGenerator implements Runnable {
 
     public void run() {
         for (int i = 0; i < eventCount; i++) {
-            ApiClient apiClient = new ApiClient();
-            apiClient.setBasePath(PATH);
             SkierEvent event = new SkierEvent(
                     (int) (Math.random() * 100000) + 1,
                     (int) (Math.random() * 10) + 1,
                     (int) (Math.random() * 40) + 1,
                     2024,
                     1,
-                    (int) (Math.random() * 360) + 1,
-                    apiClient
+                    (int) (Math.random() * 360) + 1
             );
             try {
                 eventQueue.put(event);
