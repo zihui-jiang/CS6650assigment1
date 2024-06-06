@@ -15,10 +15,33 @@
         <module>client</module>
         <module>java-client-generated</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.qunix</groupId>
+            <artifactId>structure-maven-plugin</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.qunix</groupId>
+                    <artifactId>structure-maven-plugin</artifactId>
+                    <version>0.0.1</version>
+                    <inherited>false</inherited>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>
+                                    printModules
+                                </goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>

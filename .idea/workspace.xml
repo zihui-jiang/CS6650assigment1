@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad1e0e21-dd84-4a85-a3e9-1b59afbd9a6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/client2/Throughput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/PredictClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/PredictClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/SkierEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/SkierEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client1/SkierEventGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client1/SkierEventGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client2/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client2/Client2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/client2/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/client2/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/PredictClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/PredictClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent$SkierEventBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent$SkierEventBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client1/SkierEventGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client1/SkierEventGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client2/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client2/Client2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/client2/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/client2/Main2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metrics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/metrics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/server-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +33,11 @@
     </option>
   </component>
   <component name="ProjectId" id="2hKvwkQ0qKMSdN43Q6297MR8m48" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -154,6 +145,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
